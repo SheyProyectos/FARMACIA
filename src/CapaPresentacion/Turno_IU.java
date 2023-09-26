@@ -114,7 +114,7 @@ public class Turno_IU extends javax.swing.JInternalFrame {
         btnCerrar = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 102, 255));
+        setBackground(new java.awt.Color(204, 255, 255));
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
@@ -168,6 +168,11 @@ public class Turno_IU extends javax.swing.JInternalFrame {
                 txtUsuarioFocusLost(evt);
             }
         });
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -178,15 +183,17 @@ public class Turno_IU extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
-                .addGap(3, 3, 3)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
                         .addComponent(txtDni, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
                         .addComponent(btnBuscar)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(txtUsuario))
-                .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtUsuario)
+                        .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -565,6 +572,11 @@ public class Turno_IU extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         fila_seleccionada =tabla_reporte_turno.getSelectedRow();
     }//GEN-LAST:event_tabla_reporte_turnoMousePressed
+
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_txtUsuarioActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

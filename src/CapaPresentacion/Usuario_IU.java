@@ -18,9 +18,10 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author USER
+ * @author SHEY Y YOVAN
  */
 public class Usuario_IU extends javax.swing.JInternalFrame {
+
     List<TipoUsuario> lista_tipo_usuario;
 
     /**
@@ -31,7 +32,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
         cargarTipoUsuario();
         reportar_usuarios();
     }
-    
+
     private void cargarTipoUsuario() {
         try {
             cmbTipoUsuario.removeAllItems();
@@ -52,7 +53,8 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(null, e, "Error al cargar tipo usuario", JOptionPane.ERROR_MESSAGE);
         }
     }
-          public void reportar_usuarios() {
+
+    public void reportar_usuarios() {
         try {
             setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
             DefaultTableModel tabla_temporal;
@@ -68,7 +70,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
 
             e.printStackTrace();
         }
-    
+
     }
 
     public void limpiar() {
@@ -81,7 +83,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
         txtCelular.setText("");
         txtId_tipo_usuario.setText("");
         cmbTipoUsuario.setSelectedIndex(0);
-         txtDni.requestFocus();
+        txtDni.requestFocus();
     }
 
     private void exito(String mensaje) {
@@ -134,14 +136,14 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
         txtCantidad = new javax.swing.JTextField();
         txtClave = new javax.swing.JPasswordField();
 
-        setBackground(new java.awt.Color(102, 255, 102));
+        setBackground(new java.awt.Color(204, 255, 255));
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
         setTitle("USUARIOS");
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel1.setText("DNI");
 
         txtDni.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -166,7 +168,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel2.setText("NOMBRES");
 
         txtNombres.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -186,7 +188,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel3.setText("APELLIDOS");
 
         txtApellidos.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -206,7 +208,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel4.setText("DIRECCION");
 
         txtDireccion.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -223,10 +225,10 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel5.setText("CLAVE");
 
-        jLabel6.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel6.setText("CELULAR");
 
         txtCelular.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -246,7 +248,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel7.setText("TIPO");
 
         cmbTipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADMINISTRADOR", "VENDEDOR", "CONTADOR", "CAJERO(A)", "LOGISTICA" }));
@@ -261,7 +263,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel8.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel8.setText("TIENDA");
 
         cmbTienda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PRINCIPAL" }));
@@ -289,7 +291,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(tabla_reportar_usuario);
 
-        jLabel9.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel9.setText("BUSCAR APELLIDOS");
 
         txtBuscar_apellidos.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -309,7 +311,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        btnRegistrar.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnRegistrar.setFont(new java.awt.Font("Calibri", 3, 12)); // NOI18N
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/registrar.png"))); // NOI18N
         btnRegistrar.setText("REGISTRAR");
         btnRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -320,7 +322,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        btnModificar.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnModificar.setFont(new java.awt.Font("Calibri", 3, 12)); // NOI18N
         btnModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/modificar.png"))); // NOI18N
         btnModificar.setText("MODIFICAR");
         btnModificar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -331,7 +333,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        btnEliminar.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnEliminar.setFont(new java.awt.Font("Calibri", 3, 12)); // NOI18N
         btnEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/elimina.png"))); // NOI18N
         btnEliminar.setText("ELIMINAR");
         btnEliminar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -342,13 +344,13 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        btnImprimir.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnImprimir.setFont(new java.awt.Font("Calibri", 3, 12)); // NOI18N
         btnImprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/imprimir.png"))); // NOI18N
         btnImprimir.setText("IMPRIMIR");
         btnImprimir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnImprimir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        btnCerrar.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnCerrar.setFont(new java.awt.Font("Calibri", 3, 12)); // NOI18N
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/cross.png"))); // NOI18N
         btnCerrar.setText("CERRAR");
         btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -390,7 +392,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
                     .addComponent(cmbTipoUsuario, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(cmbTienda, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnRegistrar)
+                        .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnModificar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -419,7 +421,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtBuscar_apellidos))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(txtId_tipo_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -490,7 +492,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
 
     private void cmbTipoUsuarioItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmbTipoUsuarioItemStateChanged
         // TODO add your handling code here:
-        
+
         if (evt.getStateChange() == ItemEvent.SELECTED) {
             String textoSeleccionado = (String) cmbTipoUsuario.getSelectedItem();
 
@@ -503,7 +505,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             }
 
         }
-    
+
     }//GEN-LAST:event_cmbTipoUsuarioItemStateChanged
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
@@ -569,12 +571,12 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "error");
         }
-                                  
+
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
         // TODO add your handling code here:
-            try {
+        try {
             if (txtDni.getText().length() > 0) {
 
                 if (txtNombres.getText().length() > 0) {
@@ -639,13 +641,13 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "error");
         }
-                                                
+
 
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void tabla_reportar_usuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_reportar_usuarioMousePressed
         // TODO add your handling code here:
-           if (evt.getClickCount() == 2) {
+        if (evt.getClickCount() == 2) {
             int fila_seleccionada = tabla_reportar_usuario.getSelectedRow();
 
             txtDni.setText(tabla_reportar_usuario.getValueAt(fila_seleccionada, 0).toString());
@@ -658,44 +660,43 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
             cmbTienda.setSelectedItem(tabla_reportar_usuario.getValueAt(fila_seleccionada, 7).toString());
         }
 
-    
+
     }//GEN-LAST:event_tabla_reportar_usuarioMousePressed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
-           try {
-             if (txtDni.getText().length() > 0) {
-            int aviso = JOptionPane.showConfirmDialog(rootPane, "Estas seguro de eliminar");
+        try {
+            if (txtDni.getText().length() > 0) {
+                int aviso = JOptionPane.showConfirmDialog(rootPane, "Estas seguro de eliminar");
 
-            if (aviso == 0) {
-                UsuarioBD oUsuarioBD = new UsuarioBD();
-                String dni= txtDni.getText();
-               
-                boolean rpta = oUsuarioBD.eliminarUsuario(dni);
+                if (aviso == 0) {
+                    UsuarioBD oUsuarioBD = new UsuarioBD();
+                    String dni = txtDni.getText();
 
-                if (rpta) {
-                    exito("se eliminó el usuario correctamente");
-                    reportar_usuarios();
-                    limpiar();
-                    txtDni.requestFocus();
+                    boolean rpta = oUsuarioBD.eliminarUsuario(dni);
 
-                } else {
-                    error("Tienes problemas para eliminar");
+                    if (rpta) {
+                        exito("se eliminó el usuario correctamente");
+                        reportar_usuarios();
+                        limpiar();
+                        txtDni.requestFocus();
+
+                    } else {
+                        error("Tienes problemas para eliminar");
+                    }
+
                 }
 
+            } else {
+                error("Ingrese un dni para eliminar");
+                txtDni.requestFocus();
             }
 
-        } else {
-            error("Ingrese un dni para eliminar");
-            txtDni.requestFocus();
-        }
-            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
-       
-    
+
+
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void txtBuscar_apellidosKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscar_apellidosKeyPressed
@@ -703,15 +704,15 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
         try {
             setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
             DefaultTableModel tabla_temporal;
-            
+
             String apellidos = txtBuscar_apellidos.getText();
-            
+
             UsuarioBD oUusuarioBD = new UsuarioBD();
-            
-            tabla_temporal= oUusuarioBD.buscarUsuario(apellidos);
+
+            tabla_temporal = oUusuarioBD.buscarUsuario(apellidos);
             tabla_reportar_usuario.setModel(tabla_temporal);
-            
-            int cantLista= tabla_temporal.getRowCount();
+
+            int cantLista = tabla_temporal.getRowCount();
             txtCantidad.setText("" + cantLista);
             setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         } catch (Exception ex) {
@@ -751,12 +752,12 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
 
     private void txtApellidosFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtApellidosFocusLost
         // TODO add your handling code here:
-         txtApellidos.setBackground(Color.WHITE);
+        txtApellidos.setBackground(Color.WHITE);
     }//GEN-LAST:event_txtApellidosFocusLost
 
     private void txtDireccionFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtDireccionFocusGained
         // TODO add your handling code here:
-         txtDireccion.setBackground(Color.YELLOW);
+        txtDireccion.setBackground(Color.YELLOW);
     }//GEN-LAST:event_txtDireccionFocusGained
 
     private void txtDireccionFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtDireccionFocusLost
@@ -781,12 +782,12 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
 
     private void txtCelularFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtCelularFocusLost
         // TODO add your handling code here:
-         txtCelular.setBackground(Color.WHITE);
+        txtCelular.setBackground(Color.WHITE);
     }//GEN-LAST:event_txtCelularFocusLost
 
     private void txtBuscar_apellidosFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtBuscar_apellidosFocusGained
         // TODO add your handling code here:
-         txtBuscar_apellidos.setBackground(Color.YELLOW);
+        txtBuscar_apellidos.setBackground(Color.YELLOW);
     }//GEN-LAST:event_txtBuscar_apellidosFocusGained
 
     private void txtBuscar_apellidosFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtBuscar_apellidosFocusLost
@@ -865,7 +866,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
 
     private void txtNombresKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombresKeyTyped
         // TODO add your handling code here:
-        char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (Character.isDigit(c)) {
             evt.consume();
         }
@@ -873,7 +874,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
 
     private void txtApellidosKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtApellidosKeyTyped
         // TODO add your handling code here:
-        char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (Character.isDigit(c)) {
             evt.consume();
         }
@@ -881,7 +882,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
 
     private void txtCelularKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCelularKeyTyped
         // TODO add your handling code here:
-         char c = evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (!Character.isDigit(c) || txtDni.getText().length() >= 9) {
             evt.consume();
         }
@@ -889,7 +890,7 @@ public class Usuario_IU extends javax.swing.JInternalFrame {
 
     private void txtBuscar_apellidosKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscar_apellidosKeyTyped
         // TODO add your handling code here:
-           char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (Character.isDigit(c)) {
             evt.consume();
         }

@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author USER
+ * @author SHEY Y YOVAN
  */
 public class TipoUsuario_IU extends javax.swing.JInternalFrame {
 
@@ -83,18 +83,18 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
         btnLimpiar = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 255, 255));
+        setBackground(new java.awt.Color(204, 255, 255));
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
         setTitle("TIPO DE USUARIOS");
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel1.setText("CODIGO");
 
         txtCodigo.setEnabled(false);
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel2.setText("NOMBRE");
 
         txtNombre.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -116,7 +116,7 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
 
         txtCantidad.setEnabled(false);
 
-        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel3.setText("CANTIDAD");
 
         tabla_reporte_TipoUsuarios.setModel(new javax.swing.table.DefaultTableModel(
@@ -137,7 +137,7 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(tabla_reporte_TipoUsuarios);
 
-        btnRegistrar.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnRegistrar.setFont(new java.awt.Font("Calibri", 3, 14)); // NOI18N
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/registra.png"))); // NOI18N
         btnRegistrar.setText("REGISTRAR");
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +146,7 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        btnModificar.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnModificar.setFont(new java.awt.Font("Calibri", 3, 14)); // NOI18N
         btnModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/modificar.png"))); // NOI18N
         btnModificar.setText("MODIFICAR");
         btnModificar.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +155,7 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        btnEliminar.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnEliminar.setFont(new java.awt.Font("Calibri", 3, 14)); // NOI18N
         btnEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/elimina.png"))); // NOI18N
         btnEliminar.setText("ELIMINAR");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +164,7 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        btnLimpiar.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        btnLimpiar.setFont(new java.awt.Font("Calibri", 3, 14)); // NOI18N
         btnLimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/limpia.png"))); // NOI18N
         btnLimpiar.setText("LIMPIAR");
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
@@ -173,7 +173,7 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Calibri", 3, 14)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/cierra.png"))); // NOI18N
         jButton5.setText("CERRAR");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +210,7 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
                         .addComponent(btnEliminar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnLimpiar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 284, Short.MAX_VALUE)
                         .addComponent(jButton5)))
                 .addContainerGap())
         );
@@ -227,8 +227,8 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRegistrar)

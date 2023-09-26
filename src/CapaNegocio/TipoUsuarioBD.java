@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author USER
+ * @author SHEY Y YOVAN
  */
 public class TipoUsuarioBD {
 

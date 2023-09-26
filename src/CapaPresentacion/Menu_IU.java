@@ -11,7 +11,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author USER
+ * @author SHEY Y YOVAN
  */
 public class Menu_IU extends javax.swing.JFrame {
 
@@ -53,11 +53,16 @@ public class Menu_IU extends javax.swing.JFrame {
         jSeparator6 = new javax.swing.JToolBar.Separator();
         btnCerrar = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        mantenimiento_Item_USuario = new javax.swing.JMenu();
+        mantenimiento_Item_composicion = new javax.swing.JMenu();
         Mantenimiento_Item_TipoUsuario = new javax.swing.JMenuItem();
         Mantenimiento_Item_Usuario = new javax.swing.JMenuItem();
         mantenimiento_item_turno = new javax.swing.JMenuItem();
+        jSeparator7 = new javax.swing.JPopupMenu.Separator();
         mantenimiento_item_laboratorio = new javax.swing.JMenuItem();
+        mantenimiento_item_categoria = new javax.swing.JMenuItem();
+        mantenimiento_item_medida = new javax.swing.JMenuItem();
+        mantenimiento_item_producto = new javax.swing.JMenuItem();
+        mantenimiento_item_composicion = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
@@ -70,7 +75,7 @@ public class Menu_IU extends javax.swing.JFrame {
         escritorio.setBackground(new java.awt.Color(0, 0, 0));
         escritorio.setToolTipText("");
 
-        jToolBar1.setBackground(new java.awt.Color(204, 102, 255));
+        jToolBar1.setBackground(new java.awt.Color(204, 204, 255));
         jToolBar1.setRollover(true);
 
         btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Proyecto/producto.png"))); // NOI18N
@@ -144,12 +149,12 @@ public class Menu_IU extends javax.swing.JFrame {
         jMenuBar1.setBackground(new java.awt.Color(153, 255, 153));
         jMenuBar1.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
 
-        mantenimiento_Item_USuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
-        mantenimiento_Item_USuario.setText("MANTENIMIENTO");
-        mantenimiento_Item_USuario.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
-        mantenimiento_Item_USuario.addActionListener(new java.awt.event.ActionListener() {
+        mantenimiento_Item_composicion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
+        mantenimiento_Item_composicion.setText("MANTENIMIENTO");
+        mantenimiento_Item_composicion.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
+        mantenimiento_Item_composicion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mantenimiento_Item_USuarioActionPerformed(evt);
+                mantenimiento_Item_composicionActionPerformed(evt);
             }
         });
 
@@ -160,7 +165,7 @@ public class Menu_IU extends javax.swing.JFrame {
                 Mantenimiento_Item_TipoUsuarioActionPerformed(evt);
             }
         });
-        mantenimiento_Item_USuario.add(Mantenimiento_Item_TipoUsuario);
+        mantenimiento_Item_composicion.add(Mantenimiento_Item_TipoUsuario);
 
         Mantenimiento_Item_Usuario.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         Mantenimiento_Item_Usuario.setText("USUARIO");
@@ -169,7 +174,7 @@ public class Menu_IU extends javax.swing.JFrame {
                 Mantenimiento_Item_UsuarioActionPerformed(evt);
             }
         });
-        mantenimiento_Item_USuario.add(Mantenimiento_Item_Usuario);
+        mantenimiento_Item_composicion.add(Mantenimiento_Item_Usuario);
 
         mantenimiento_item_turno.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         mantenimiento_item_turno.setText("TURNO");
@@ -178,7 +183,8 @@ public class Menu_IU extends javax.swing.JFrame {
                 mantenimiento_item_turnoActionPerformed(evt);
             }
         });
-        mantenimiento_Item_USuario.add(mantenimiento_item_turno);
+        mantenimiento_Item_composicion.add(mantenimiento_item_turno);
+        mantenimiento_Item_composicion.add(jSeparator7);
 
         mantenimiento_item_laboratorio.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         mantenimiento_item_laboratorio.setText("LABORATORIO");
@@ -187,9 +193,45 @@ public class Menu_IU extends javax.swing.JFrame {
                 mantenimiento_item_laboratorioActionPerformed(evt);
             }
         });
-        mantenimiento_Item_USuario.add(mantenimiento_item_laboratorio);
+        mantenimiento_Item_composicion.add(mantenimiento_item_laboratorio);
 
-        jMenuBar1.add(mantenimiento_Item_USuario);
+        mantenimiento_item_categoria.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        mantenimiento_item_categoria.setText("CATEGORIA");
+        mantenimiento_item_categoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mantenimiento_item_categoriaActionPerformed(evt);
+            }
+        });
+        mantenimiento_Item_composicion.add(mantenimiento_item_categoria);
+
+        mantenimiento_item_medida.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        mantenimiento_item_medida.setText("MEDIDA");
+        mantenimiento_item_medida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mantenimiento_item_medidaActionPerformed(evt);
+            }
+        });
+        mantenimiento_Item_composicion.add(mantenimiento_item_medida);
+
+        mantenimiento_item_producto.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        mantenimiento_item_producto.setText("PRODUCTO");
+        mantenimiento_item_producto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mantenimiento_item_productoActionPerformed(evt);
+            }
+        });
+        mantenimiento_Item_composicion.add(mantenimiento_item_producto);
+
+        mantenimiento_item_composicion.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        mantenimiento_item_composicion.setText("COMPOSICION");
+        mantenimiento_item_composicion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mantenimiento_item_composicionActionPerformed(evt);
+            }
+        });
+        mantenimiento_Item_composicion.add(mantenimiento_item_composicion);
+
+        jMenuBar1.add(mantenimiento_Item_composicion);
 
         jMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255)));
         jMenu2.setText("COMPRAS");
@@ -227,9 +269,10 @@ public class Menu_IU extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void mantenimiento_Item_USuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mantenimiento_Item_USuarioActionPerformed
+    private void mantenimiento_Item_composicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mantenimiento_Item_composicionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_mantenimiento_Item_USuarioActionPerformed
+        
+    }//GEN-LAST:event_mantenimiento_Item_composicionActionPerformed
 
     private void Mantenimiento_Item_TipoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mantenimiento_Item_TipoUsuarioActionPerformed
         // TODO add your handling code here:
@@ -275,6 +318,46 @@ public class Menu_IU extends javax.swing.JFrame {
         frame.show();
     }//GEN-LAST:event_mantenimiento_item_laboratorioActionPerformed
 
+    private void mantenimiento_item_categoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mantenimiento_item_categoriaActionPerformed
+        // TODO add your handling code here:
+         Categoria_IU frame = new Categoria_IU();
+        escritorio.add(frame);
+        Dimension deskopSize = escritorio.getSize();
+        Dimension FrameSize = frame.getSize();
+        frame.setLocation((deskopSize.width - FrameSize.width) / 2, (deskopSize.height - FrameSize.height) / 2);
+        frame.show();
+    }//GEN-LAST:event_mantenimiento_item_categoriaActionPerformed
+
+    private void mantenimiento_item_medidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mantenimiento_item_medidaActionPerformed
+        // TODO add your handling code here:
+           Medida_IU frame = new Medida_IU();
+        escritorio.add(frame);
+        Dimension deskopSize = escritorio.getSize();
+        Dimension FrameSize = frame.getSize();
+        frame.setLocation((deskopSize.width - FrameSize.width) / 2, (deskopSize.height - FrameSize.height) / 2);
+        frame.show();
+    }//GEN-LAST:event_mantenimiento_item_medidaActionPerformed
+
+    private void mantenimiento_item_productoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mantenimiento_item_productoActionPerformed
+        // TODO add your handling code here:
+         Producto_IU frame = new Producto_IU();
+        escritorio.add(frame);
+        Dimension deskopSize = escritorio.getSize();
+        Dimension FrameSize = frame.getSize();
+        frame.setLocation((deskopSize.width - FrameSize.width) / 2, (deskopSize.height - FrameSize.height) / 2);
+        frame.show();
+    }//GEN-LAST:event_mantenimiento_item_productoActionPerformed
+
+    private void mantenimiento_item_composicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mantenimiento_item_composicionActionPerformed
+        // TODO add your handling code here:
+       Composicion_IU frame = new Composicion_IU();
+        escritorio.add(frame);
+        Dimension deskopSize = escritorio.getSize();
+        Dimension FrameSize = frame.getSize();
+        frame.setLocation((deskopSize.width - FrameSize.width) / 2, (deskopSize.height - FrameSize.height) / 2);
+        frame.show();
+    }//GEN-LAST:event_mantenimiento_item_composicionActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -318,7 +401,7 @@ public class Menu_IU extends javax.swing.JFrame {
     private javax.swing.JButton btnCompras;
     private javax.swing.JButton btnProductos;
     private javax.swing.JButton btnVentas;
-    private javax.swing.JDesktopPane escritorio;
+    public static javax.swing.JDesktopPane escritorio;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JMenu jMenu2;
@@ -332,9 +415,14 @@ public class Menu_IU extends javax.swing.JFrame {
     private javax.swing.JToolBar.Separator jSeparator4;
     private javax.swing.JToolBar.Separator jSeparator5;
     private javax.swing.JToolBar.Separator jSeparator6;
+    private javax.swing.JPopupMenu.Separator jSeparator7;
     private javax.swing.JToolBar jToolBar1;
-    private javax.swing.JMenu mantenimiento_Item_USuario;
+    private javax.swing.JMenu mantenimiento_Item_composicion;
+    private javax.swing.JMenuItem mantenimiento_item_categoria;
+    private javax.swing.JMenuItem mantenimiento_item_composicion;
     private javax.swing.JMenuItem mantenimiento_item_laboratorio;
+    private javax.swing.JMenuItem mantenimiento_item_medida;
+    private javax.swing.JMenuItem mantenimiento_item_producto;
     private javax.swing.JMenuItem mantenimiento_item_turno;
     // End of variables declaration//GEN-END:variables
 }

@@ -6,7 +6,7 @@ package CapaDatos;
 
 /**
  *
- * @author USER
+ * @author SHEY Y YOVAN
  */
 public class TipoUsuario {
     private int idtipousuario;

@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author USER
+ *@author SHEY Y YOVAN
  */
 public class Conexion {
     private static String clase = "com.mysql.cj.jdbc.Driver";
