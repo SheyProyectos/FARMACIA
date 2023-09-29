@@ -69,6 +69,9 @@ public class Categoria_IU extends javax.swing.JInternalFrame {
                 Object[] data = {idcategoria, maNombre};
                 tabla_temporal.addRow(data);
 
+                int cantLista = tabla_temporal.getRowCount();
+                txtCantidad.setText("" + cantLista);
+
             }
             tabla_reporte_categorias.setModel(tabla_temporal);
             setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -443,39 +446,39 @@ public class Categoria_IU extends javax.swing.JInternalFrame {
             limpiar_tabla_formulario();
             DefaultTableModel tabla_temporal = (DefaultTableModel) this.tabla_reporte_categorias.getModel();
             CategoriaBD oCategoriaBD = new CategoriaBD();
-            
+
             String valor = txtBuscarCategorias.getText().trim();
-            List<Categoria> lista_categorias =oCategoriaBD.buscarCategorias(valor);
-            
+            List<Categoria> lista_categorias = oCategoriaBD.buscarCategorias(valor);
+
             for (int i = 0; i < lista_categorias.size(); i++) {
-              int idcategoria = lista_categorias.get(i).getIdcategoria();
-              String maNombre = lista_categorias.get(i).getCatNombre();
-              Object[] data = {idcategoria,maNombre};
-              tabla_temporal.addRow(data);
+                int idcategoria = lista_categorias.get(i).getIdcategoria();
+                String maNombre = lista_categorias.get(i).getCatNombre();
+                Object[] data = {idcategoria, maNombre};
+                tabla_temporal.addRow(data);
             }
             tabla_reporte_categorias.setModel(tabla_temporal);
-            
-            setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR)); 
-            
+
+            setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
         } catch (Exception ex) {
-            setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR)); 
+            setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
             ex.printStackTrace();
         }
     }//GEN-LAST:event_txtBuscarCategoriasKeyPressed
 
     private void txtNombreFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNombreFocusGained
         // TODO add your handling code here:
-         txtNombre.setBackground(Color.YELLOW);
+        txtNombre.setBackground(Color.YELLOW);
     }//GEN-LAST:event_txtNombreFocusGained
 
     private void txtNombreFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNombreFocusLost
         // TODO add your handling code here:
-         txtNombre.setBackground(Color.WHITE);
+        txtNombre.setBackground(Color.WHITE);
     }//GEN-LAST:event_txtNombreFocusLost
 
     private void txtBuscarCategoriasFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtBuscarCategoriasFocusGained
         // TODO add your handling code here:
-         txtBuscarCategorias.setBackground(Color.YELLOW);
+        txtBuscarCategorias.setBackground(Color.YELLOW);
     }//GEN-LAST:event_txtBuscarCategoriasFocusGained
 
     private void txtBuscarCategoriasFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtBuscarCategoriasFocusLost
@@ -485,14 +488,14 @@ public class Categoria_IU extends javax.swing.JInternalFrame {
 
     private void txtNombreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreKeyPressed
         // TODO add your handling code here:
-         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             btnRegistrar.requestFocus();
         }
     }//GEN-LAST:event_txtNombreKeyPressed
 
     private void txtNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreKeyTyped
         // TODO add your handling code here:
-          char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (Character.isDigit(c)) {
             evt.consume();
         }

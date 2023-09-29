@@ -127,6 +127,7 @@ public class Composicion_IU extends javax.swing.JInternalFrame {
             }
         });
 
+        txtProducto.setEnabled(false);
         txtProducto.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtProductoFocusGained(evt);
@@ -389,15 +390,13 @@ public class Composicion_IU extends javax.swing.JInternalFrame {
     private void btnBuscarProductoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnBuscarProductoKeyPressed
         // TODO add your handling code here:
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            txtProducto.requestFocus();
+            txtComposicion.requestFocus();
         }
     }//GEN-LAST:event_btnBuscarProductoKeyPressed
 
     private void txtProductoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtProductoKeyPressed
         // TODO add your handling code here:
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-           txtComposicion.requestFocus();
-        }
+        
     }//GEN-LAST:event_txtProductoKeyPressed
 
     private void txtComposicionKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtComposicionKeyPressed
